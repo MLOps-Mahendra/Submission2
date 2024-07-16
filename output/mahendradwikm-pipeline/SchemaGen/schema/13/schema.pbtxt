@@ -1,0 +1,353 @@
+feature {
+  name: "AgeCategory"
+  type: BYTES
+  domain: "AgeCategory"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "AlcoholDrinking"
+  type: BYTES
+  domain: "AlcoholDrinking"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Asthma"
+  type: BYTES
+  domain: "Asthma"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "BMI"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Diabetic"
+  type: BYTES
+  domain: "Diabetic"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "DiffWalking"
+  type: BYTES
+  domain: "DiffWalking"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "GenHealth"
+  type: BYTES
+  domain: "GenHealth"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "HeartDisease"
+  type: INT
+  bool_domain {
+  }
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "HeartDiseaseStatus"
+  type: BYTES
+  domain: "HeartDiseaseStatus"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "KidneyDisease"
+  type: BYTES
+  domain: "KidneyDisease"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "MentalHealth"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "PhysicalActivity"
+  type: BYTES
+  domain: "PhysicalActivity"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "PhysicalHealth"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Race"
+  type: BYTES
+  domain: "Race"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Sex"
+  type: BYTES
+  domain: "Sex"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "SkinCancer"
+  type: BYTES
+  domain: "SkinCancer"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "SleepTime"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Smoking"
+  type: BYTES
+  domain: "Smoking"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Stroke"
+  type: BYTES
+  domain: "Stroke"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+string_domain {
+  name: "AgeCategory"
+  value: "18-24"
+  value: "25-29"
+  value: "30-34"
+  value: "35-39"
+  value: "40-44"
+  value: "45-49"
+  value: "50-54"
+  value: "55-59"
+  value: "60-64"
+  value: "65-69"
+  value: "70-74"
+  value: "75-79"
+  value: "80 or older"
+}
+string_domain {
+  name: "AlcoholDrinking"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "Asthma"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "Diabetic"
+  value: "No"
+  value: "No, borderline diabetes"
+  value: "Yes"
+  value: "Yes (during pregnancy)"
+}
+string_domain {
+  name: "DiffWalking"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "GenHealth"
+  value: "Excellent"
+  value: "Fair"
+  value: "Good"
+  value: "Poor"
+  value: "Very good"
+}
+string_domain {
+  name: "HeartDiseaseStatus"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "KidneyDisease"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "PhysicalActivity"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "Race"
+  value: "American Indian/Alaskan Native"
+  value: "Asian"
+  value: "Black"
+  value: "Hispanic"
+  value: "Other"
+  value: "White"
+}
+string_domain {
+  name: "Sex"
+  value: "Female"
+  value: "Male"
+}
+string_domain {
+  name: "SkinCancer"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "Smoking"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "Stroke"
+  value: "No"
+  value: "Yes"
+}
